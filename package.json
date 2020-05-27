@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "nodemon src/server.js",
+    "heroku": "node src/server.js",
     "backend": "nodemon src/server.js",
     "frontend": "npm run start --prefix client",
     "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
