@@ -15,10 +15,10 @@ class App {
     this.server.use(bodyParser.urlencoded({ extended: true }));
     this.server.use(bodyParser.json());
     this.server.use(cookieParser());
+    this.server.use(cors());
   }
   routes() {
     this.server.use(routes);
-    this.server.use(cors);
   }
 }
 
